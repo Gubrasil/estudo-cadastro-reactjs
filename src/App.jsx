@@ -1,29 +1,16 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Cadastro from './Cadastro';
-import vendedoras from './vendedoras';
+import {BrowserRouter, Route} from 'react-router-dom';
+
+/*Paginas */
+import Home from './site/home.jsx';
+import Login from './app/login.jsx';
+
 
 function App() {
-    return <div>
-        <Header texto="Cadastro de Vendedoras"/>
-        <Cadastro cpf={vendedoras[0].cpf}
-        nome={vendedoras[0].nome}
-        telefone={vendedoras[0].telefone}
-        senha={vendedoras[0].senha}/>
-
-        <Cadastro cpf={vendedoras[1].cpf}
-        nome={vendedoras[1].nome}
-        telefone={vendedoras[1].telefone}
-        senha={vendedoras[1].senha}/>
-
-        <Cadastro cpf={vendedoras[2].cpf}
-        nome={vendedoras[2].nome}
-        telefone={vendedoras[2].telefone}
-        senha={vendedoras[2].senha}/>
-        
-        <Footer />
-    </div>;
+    return <BrowserRouter>
+    <Route exact path='/' component={Home} />
+    <Route exact path='/app' component={Login} />
+    </BrowserRouter>
 }
 
 export default App;
