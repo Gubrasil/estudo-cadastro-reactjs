@@ -19,7 +19,7 @@ function Menu() {
                         <a className="nav-link" aria-current="page" href="#">Cadastro</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Login</a>
+                        <a className="nav-link" aria-current="page" href="/Login">Login</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#footer">Contato</a>

@@ -1,0 +1,16 @@
+.form-div {
+    background-color: #CCCCCC;
+    height: 100vh;
+
+}
+
+.form-login {
+    width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.login-links a {
+    text-decoration: none;
+    font-size: 10pt;;
+}

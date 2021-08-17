@@ -1,3 +1,23 @@
+# App para cadastro/login de vendedoras para acesso as funcionalidades de uma loja de venda fisica (ponto, telemarketing, etc)
+
+Esse Projeto foi desenvolvido com React, Bootstrap.
+
+### Para execução do Projeto 
+
+Você deverá instalar o Node.JS
+
+Após baixar o projeto e instalar o node, abra o cmd na pasta do projeto e execute o comando: npm start
+
+o Projeto será instanciado na porta 3000: http://localhost:3000
+
+# Construído com:
+
+O Projeto foi construído com:
+. React
+. Bootstrap
+. HTML
+. Css
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
