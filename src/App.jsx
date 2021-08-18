@@ -1,16 +1,22 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 /*Paginas */
 import Home from './pages/home/home.jsx';
-import Login from './pages/Login/login.jsx';
+import Login from './pages/login/login.jsx';
+import NovoCadastro from './pages/cadastro/novoCadastro.jsx';
 
 
 function App() {
-    return <BrowserRouter>
-    <Route exact path='/' component={Home} />
-    <Route exact path='/login' component={Login} />
-    </BrowserRouter>
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/login' component={Login} />
+                <Route exact path='/novocadastro' component={NovoCadastro} />
+            </Switch>
+        </BrowserRouter>
+    )
 }
 
 export default App;
