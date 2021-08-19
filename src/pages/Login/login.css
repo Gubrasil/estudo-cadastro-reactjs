@@ -1,12 +1,12 @@
-.form-div {
-    background-color: #CCCCCC;
+.form-container {
     height: 100vh;
-
+    margin-top: 40px;
+    align-items: center;
 }
 
 .form-login {
     width: 330px;
-    padding: 15px;
+    padding: px;
     margin: auto;
 }
 
