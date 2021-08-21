@@ -1,9 +1,9 @@
 .container-fluid {
-    background-color: white;
-    max-width: 940px;
-    padding: 150px  0 0 0;    
-    width: 100%;
-    }
+   background-color: white;
+   max-width: 940px;
+   padding: 150px  0 0 0;    
+   width: 100%;
+}
 
 .form-group {
     display: flex;
