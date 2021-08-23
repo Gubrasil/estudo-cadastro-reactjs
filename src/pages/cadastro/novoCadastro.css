@@ -1,29 +1,35 @@
 .container-fluid {
    background-color: white;
-   max-width: 940px;
    padding: 150px  0 0 0;    
    width: 100%;
 }
 
 .form-group {
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .form-control {
     width: 100%;
     margin: 10px;
-
 }
 
 .row-1 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     margin: 20px;
+    border-radius: 10px;
 }
+
 .row-2 {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns:  auto auto;
+    margin: 20px;
+}
+
+.row-3 {
+    display: grid;
+    grid-template-columns:  auto auto;
     margin: 20px;
 }

@@ -16,6 +16,7 @@ function Login() {
     firebase.auth().signInWithEmailAndPassword(email, senha)
       .then(function (result) {
         setSucesso('S');
+        console.log(result)
         alert("Logado com sucesso");
       })
       .catch(function (error) {
