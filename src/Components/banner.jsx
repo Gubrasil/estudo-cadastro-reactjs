@@ -13,7 +13,7 @@ function Banner(){
                 </div>
 
                 <div className="col-lg-6">
-                    <img src="Images/Foto_loja.jpg" />
+                    <img src="Images/Foto_loja.jpg" alt=" " width=" " height=" " />
                 </div>
        
             </div>

@@ -21,7 +21,7 @@ function ListaVendedoras(){
 
             setVendedoras(listaVends);
         })
-    }, []);
+    }, [setVendedoras]);
 
     return <table className="table table-hover table-bordered">
             <thead>
