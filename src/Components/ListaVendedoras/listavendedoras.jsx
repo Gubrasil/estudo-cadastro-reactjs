@@ -6,11 +6,15 @@ import firebase from '../../config/firebase';
 function ListaVendedoras(){
 
     const [vendedoras, setVendedoras] = useState([]);
-    let listaVends = [];
+    
 
     useEffect(function(){
+        
+        let listaVends = [];
+
         firebase.firestore().collection('cadastro_vendedoras').get().then(async function(resultado){
             await resultado.docs.forEach(function(doc){
+            
                 listaVends.push({
                         nome: doc.data().nome,
                         cpf: doc.data().cpf,
