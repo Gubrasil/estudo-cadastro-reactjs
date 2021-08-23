@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import Menu from '../../Components/menu';
 import './login.css'
 
@@ -40,10 +40,11 @@ function Login() {
       </div>
       <button onClick={LoginUsuario} className="w-100 btn btn-lg btn-primary" type="button">Acessar</button>
 
-      {
-        //verificar se autenticação foi sucesso e emite mensagem de erro
-        sucesso === 'N' ? <div class="alert alert-danger mt-2" role="alert" >E-mail ou senha inválido.</div>: null
-      }
+  
+
+        {sucesso === 'N' ? <div class="alert alert-danger mt-2" role="alert" >E-mail ou senha inválido.</div>: null}
+        {sucesso === 'S' ? <Redirect to='/listavendedoras' /> : null}
+      
       
 
       <div className="login-links mt-1">

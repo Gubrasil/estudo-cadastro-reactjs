@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, Redirect } from 'react-router-dom';
 import Menu from '../../Components/menu';
 import './novoCadastro.css';
 
@@ -48,7 +49,7 @@ function NovoCadastro() {
         }
         else {
             db.collection('cadastro_vendedoras').add({
-                id: cpf,
+                cpf: cpf,
                 nome: nome,
                 email: email,
                 telefone: telefone,
@@ -121,8 +122,7 @@ function NovoCadastro() {
                 </div>
 
                 {mensagem.length > 0  ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null}
-                {sucesso === 'S' ? <div className="alert alert-success" role="alert">{mensagemSucesso}</div> : null}
-
+                {sucesso === 'S' ? <Redirect to='/listavendedoras' />: null}
             </form >
 
         </div >

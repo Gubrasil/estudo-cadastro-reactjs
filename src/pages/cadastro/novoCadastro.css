@@ -1,7 +1,7 @@
 .container-fluid {
    background-color: white;
-   padding: 150px  0 0 0;    
-   width: 100%;
+   padding: 80px  0 0 0;    
+   width: 60%;
 }
 
 .form-group {
@@ -11,25 +11,25 @@
 }
 
 .form-control {
-    width: 100%;
+    width: 60%;
     margin: 10px;
 }
 
 .row-1 {
     display: grid;
     grid-template-columns: auto;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
 }
 
 .row-2 {
     display: grid;
     grid-template-columns:  auto auto;
-    margin: 20px;
+    margin: 10px;
 }
 
 .row-3 {
     display: grid;
     grid-template-columns:  auto auto;
-    margin: 20px;
+    margin: 10px;
 }
