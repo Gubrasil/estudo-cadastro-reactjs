@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import Menu from '../../Components/menu';
 import './novoCadastro.css';
 
@@ -15,7 +15,6 @@ function NovoCadastro() {
     const [telefone, setTelefone] = useState('');
     const [senha, setSenha] = useState('');
     const [mensagem, setMensagem] = useState('');
-    const [mensagemSucesso, setMensagemSucesso] = useState('');
     const [sucesso, setSucesso] = useState('N');
     const db = firebase.firestore();
 
@@ -23,7 +22,6 @@ function NovoCadastro() {
         firebase.auth().createUserWithEmailAndPassword(email, senha)
             .then(function (result) {
                 setSucesso('S');
-                setMensagemSucesso('Vendedor(a) cadastrado com sucesso');
             })
             .catch(function (erro) {
                 setSucesso('N');
@@ -55,7 +53,6 @@ function NovoCadastro() {
                 telefone: telefone,
                 senha: senha
             }).then(async() => {
-                setMensagemSucesso('Vendedor(a) cadastrado com sucesso');
                 setSucesso('S');
                 await CriaLogin();
             }).catch((erro) => {
