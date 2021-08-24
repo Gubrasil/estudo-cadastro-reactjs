@@ -9,7 +9,7 @@ function ListaVendedoras(){
     
 
     useEffect(function(){
-        
+
         let listaVends = [];
 
         firebase.firestore().collection('cadastro_vendedoras').get().then(async function(resultado){
@@ -21,7 +21,7 @@ function ListaVendedoras(){
                         email: doc.data().email,
                         fone: doc.data().telefone
                     });
-            })
+            }) 
 
             setVendedoras(listaVends);
         })

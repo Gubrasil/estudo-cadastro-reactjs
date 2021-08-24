@@ -1,13 +1,16 @@
 .form-container {
-    height: 100vh;
-    margin-top: 40px;
     align-items: center;
 }
 
 .form-login {
-    width: 330px;
+    width: 500px;
     padding: px;
     margin: auto;
+}
+
+.form-floating {
+    margin-left: 100px;
+    width: 90%;
 }
 
 .login-links a {
